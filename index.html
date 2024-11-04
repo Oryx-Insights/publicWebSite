@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        /* Background */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(145deg, #000000, #1a1a1a, #2e2e2e);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        /* Title Styling */
+        h1 {
+            font-size: 4em;
+            background: linear-gradient(135deg, #e0e0e0, #c0c0c0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        /* Subtle glow animation */
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+            }
+            to {
+                text-shadow: 0 0 16px rgba(255, 255, 255, 0.8);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Coming Soon</h1>
+</body>
+</html>
