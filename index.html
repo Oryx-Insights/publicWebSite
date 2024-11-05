@@ -5,33 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
     <style>
+        /* Base Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
         /* Background */
         body {
-            margin: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(145deg, #000000, #1a1a1a, #2e2e2e);
-            color: #fff;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(145deg, #0d0d0d, #1c1c1c);
+            color: #ffffff;
+            text-align: center;
             overflow: hidden;
         }
 
-        /* Title Styling */
-        h1 {
-            font-size: 4em;
-            background: linear-gradient(135deg, #e0e0e0, #c0c0c0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-            animation: glow 2s ease-in-out infinite alternate;
+        /* Title Above Main Text */
+        .main-title {
+            font-size: 1.5em;
+            color: #b0b0b0;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
         }
 
-        /* Subtle glow animation */
+        /* Coming Soon Text */
+        h1 {
+            font-size: 5em;
+            background: linear-gradient(135deg, #d1d1d1, #a6a6a6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            animation: glow 2s ease-in-out infinite alternate;
+            margin-bottom: 10px;
+        }
+
+        /* Subtitle */
+        .subtitle {
+            font-size: 1.2em;
+            color: #909090;
+            margin-bottom: 40px;
+            max-width: 80%;
+        }
+
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9em;
+            color: #707070;
+        }
+
+        /* Glow Animation for Text */
         @keyframes glow {
             from {
-                text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+                text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
             }
             to {
                 text-shadow: 0 0 16px rgba(255, 255, 255, 0.8);
@@ -40,6 +73,18 @@
     </style>
 </head>
 <body>
+    <!-- Main Title -->
+    <div class="main-title">Our Next Big Thing</div>
+
+    <!-- Coming Soon Text -->
     <h1>Coming Soon</h1>
+
+    <!-- Subtitle -->
+    <p class="subtitle">Stay tuned for an exciting experience like no other.</p>
+
+    <!-- Footer with Copyright -->
+    <footer>
+        &copy; 2024 ORYX AI INFORMATION TECHNOLOGY - FZCO. All rights reserved.
+    </footer>
 </body>
 </html>
